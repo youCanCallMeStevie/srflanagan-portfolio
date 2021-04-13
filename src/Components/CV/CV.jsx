@@ -32,7 +32,7 @@ function CV({ theme, setTheme }) {
       <Container>
 
         <Title id="skills" >Skills</Title>
-        <LgCircle xAxis={"0"} next={"experience"}/>
+        {/* <LgCircle xAxis={"0"} next={"experience"}/> */}
 
         </Container> 
     
