@@ -16,11 +16,9 @@ export const FooterLinksContainer = styled.div`
   width: 100%;
   background:${props => props.theme.pageBackground};
   transition: all .5s ease;
-
-  /* max-width: 1000px; */
   display: flex;
   justify-content: center;
-  /* margin-bottom: 16px; */
+  padding-bottom: 16px;
   @media screen and (min-width: 820px) {
     padding-top: 32px;
   }
@@ -83,7 +81,6 @@ export const SocialWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin: 40px auto 20px auto; */
   padding-bottom: 24px;
   @media screen and (max-width: 820px) {
     flex-direction: column;
