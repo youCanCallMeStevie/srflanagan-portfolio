@@ -8,11 +8,14 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all .5s ease;
+
 `;
 
 export const FooterLinksContainer = styled.div`
   width: 100%;
   background:${props => props.theme.pageBackground};
+  transition: all .5s ease;
 
   /* max-width: 1000px; */
   display: flex;
@@ -38,6 +41,8 @@ export const FooterItems = styled.div`
   width: 160px;
   box-sizing: border-box;
   color:  ${props => props.theme.fontColor};
+  transition: all .5s ease;
+
 
   @media screen and (max-width: 420px) {
     margin: 0px;
@@ -52,6 +57,8 @@ export const FooterLinkTitle = styled.h2`
 
 export const FooterLink = styled(Link)`
   color: ${props => props.theme.fontColor};
+  transition: all .5s ease;
+
   text-decoration: none;
   margin-bottom: 0.5rem;
   cursor: pointer;
@@ -64,6 +71,8 @@ export const FooterLink = styled(Link)`
 
 export const SocialContainer = styled.section`
    background:${props => props.theme.pageBackground};
+   transition: all .5s ease;
+
   width: 100%;
   
 `;
@@ -87,6 +96,8 @@ export const SiteLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 12px;
+  transition: all .5s ease;
+
 `;
 
 export const MoonWrapper = styled.div`
@@ -100,6 +111,8 @@ export const MoonWrapper = styled.div`
 
 export const MoonText = styled.div`
   color: ${props => props.theme.fontColor};
+  transition: all .5s ease;
+
   font-size: 12px;
   margin-bottom: 12px;
   @media screen and (max-width: 820px) {
@@ -124,6 +137,7 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: ${props => props.theme.fontColor};
+
   font-size: 24px;
   &:hover {
     color: ${props => props.theme.accents};
