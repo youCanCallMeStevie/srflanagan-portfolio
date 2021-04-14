@@ -70,8 +70,8 @@ export const Container = styled.div`
   margin-top: 2em;
   /* margin-right: auto;
   margin-left: auto; */
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   display: flex;
   justify-content: center;
   min-width: 300px;
@@ -79,7 +79,7 @@ export const Container = styled.div`
   p {
     color: ${props => props.theme.titleColor};
     letter-spacing: 1px;
-    margin: 10px;
+    /* margin: 10px; */
   }
 
   /* @media screen and (max-width: 991px) {
@@ -98,9 +98,11 @@ export const Title = styled.h1`
   color: ${props => props.theme.titleColor};
   transition: all 0.5s ease;
   font-size: 5.5em;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   @media screen and (max-width: 960px) {
     font-size: 4.5em;
+        /* margin-bottom: 12px; */
+
   }
   @media screen and (max-width: 500px) {
     font-size: 3em;
