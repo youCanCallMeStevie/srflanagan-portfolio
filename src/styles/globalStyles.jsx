@@ -98,10 +98,10 @@ export const Title = styled.h1`
   color: ${props => props.theme.titleColor};
   transition: all 0.5s ease;
   font-size: 5.5em;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
   @media screen and (max-width: 960px) {
     font-size: 4.5em;
-        /* margin-bottom: 12px; */
+    margin-bottom: 12px;
 
   }
   @media screen and (max-width: 500px) {
@@ -141,6 +141,15 @@ export const Divider = styled.div`
   border-bottom: 5px solid ${props => props.theme.titleColor};
   width: 20em;
   margin: 1em 0 1em 0;
+  @media screen and (max-width: 960px) {
+    width: 15em;
+
+
+  }
+  @media screen and (max-width: 500px) {
+    width: 20px;
+
+  }
 `;
 
 export const Row = styled.div`
