@@ -80,7 +80,6 @@ export const Container = styled.div`
     color: ${props => props.theme.titleColor};
     letter-spacing: 1px;
     margin: 10px;
-
   }
 
   /* @media screen and (max-width: 991px) {
@@ -101,7 +100,10 @@ export const Title = styled.h1`
   font-size: 5.5em;
   margin-bottom: 16px;
   @media screen and (max-width: 960px) {
-    font-size: 4.5em;;
+    font-size: 4.5em;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 3em;
   }
 `;
 
@@ -160,14 +162,14 @@ export const Column = styled.div`
   /* align-content:start; */
 
   img {
-  min-width: 300px;
+    min-width: 300px;
     height: 300px;
     border-radius: 50%;
     margin: 50px;
     @media screen and (max-width: 500px) {
       min-width: 200px;
-    height: 200px;
-  }
+      height: 200px;
+    }
   }
 `;
 
