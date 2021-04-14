@@ -41,7 +41,7 @@ export const Page = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-width: 360px;
+  min-width: 300px;
   background-color: ${props => props.theme.pageBackground};
   transition: all 0.5s ease;
 `;
@@ -74,7 +74,7 @@ export const Container = styled.div`
   padding-right: 50px;
   display: flex;
   justify-content: center;
-  min-width: 320px;
+  min-width: 300px;
 
   p {
     color: ${props => props.theme.titleColor};
@@ -155,7 +155,7 @@ export const Column = styled.div`
   padding: 20px;
   /* margin: 50px; */
   max-width: 45vw;
-  min-width: 320px;
+  min-width: 300px;
   /* justify-content:space-around; */
   /* align-content:start; */
 
@@ -164,6 +164,10 @@ export const Column = styled.div`
     height: 300px;
     border-radius: 50%;
     margin: 50px;
+    @media screen and (max-width: 500px) {
+      min-width: 200px;
+    height: 200px;
+  }
   }
 `;
 
@@ -171,7 +175,7 @@ export const CVContainer = styled.div`
   z-index: 1;
   width: 50%;
   margin-top: 2em;
-  min-width: 320px;
+  min-width: 300px;
   /* padding-left: 150px; */
   p {
     color: ${props => props.theme.titleColor};
