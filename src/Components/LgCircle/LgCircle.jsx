@@ -1,6 +1,6 @@
 import React from "react";
 import { IconWrapper, PageWrapper } from "./LgCircle.elements";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { HashLink as Link } from 'react-router-hash-link';
 function LgCircle({xAxis, next}) {
   return (

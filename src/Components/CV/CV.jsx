@@ -1,29 +1,21 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { MdOpenInBrowser } from "react-icons/md";
 
 import {
   Page,
-  Container,
   Divider,
   SubTitle,
   Heading,
-  ScriptHeading,
   Column,
   Row,
   CVContainer,
 } from "../../styles/globalStyles";
 import { SocialIcons, SocialIconLink } from "../Footer/Footer.elements";
-import { SmCircle, LgCircle } from "../index";
+// import { SmCircle, LgCircle } from "../index";
 
 function CV({ theme, setTheme }) {
-  function changeTheme() {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }
+
 
   return (
     <>
@@ -54,31 +46,6 @@ function CV({ theme, setTheme }) {
                 Lauda
               </p>
 
-              {/* <Heading id="contact">&#60;Contact&#47;&#62;</Heading>
-              <Divider />
-              <SocialIcons>
-                <SocialIconLink
-                  href={"https://github.com/youCanCallMeStevie"}
-                  target="_blank"
-                  aria-lable="Github"
-                >
-                  <FaGithub />
-                </SocialIconLink>
-                <SocialIconLink
-                  href={"https://www.instagram.com/steviecodes"}
-                  target="_blank"
-                  aria-lable="Instagram"
-                >
-                  <FaInstagram />
-                </SocialIconLink>
-                <SocialIconLink
-                  href={"https://www.linkedin.com/in/youcancallmestevie/"}
-                  target="_blank"
-                  aria-lable="Linked"
-                >
-                  <FaLinkedin />
-                </SocialIconLink>
-              </SocialIcons> */}
 
               {/* <LgCircle xAxis={"0"} next={"experience"}/> */}
             </CVContainer>
@@ -95,14 +62,14 @@ function CV({ theme, setTheme }) {
                       "https://github.com/youCanCallMeStevie/uk-biodynamic-wineries-fe"
                     }
                     target="_blank"
-                    aria-lable="Github Repo for LunaVines"
+                    aria-label="Github Repo for LunaVines"
                   >
                     <FaGithub />
                   </SocialIconLink>
                   <SocialIconLink
                     href={"https://lunavines.vercel.app/"}
                     target="_blank"
-                    aria-lable="LunaVines Website"
+                    aria-label="LunaVines Website"
                   >
                     <MdOpenInBrowser />
                   </SocialIconLink>
@@ -123,14 +90,14 @@ function CV({ theme, setTheme }) {
                   <SocialIconLink
                     href={"https://github.com/youCanCallMeStevie/igclone-fe"}
                     target="_blank"
-                    aria-lable="Github Repo for FE Instagram Clone"
+                    aria-label="Github Repo for FE Instagram Clone"
                   >
                     <FaGithub />
                   </SocialIconLink>
                   <SocialIconLink
                     href={"https://ig-clone-zeta.vercel.app/login"}
                     target="_blank"
-                    aria-lable="Instagram Clone"
+                    aria-label="Instagram Clone"
                   >
                     <MdOpenInBrowser />
                   </SocialIconLink>
@@ -154,14 +121,14 @@ function CV({ theme, setTheme }) {
                       "https://github.com/youCanCallMeStevie/M8-D5-Oauth-Spotify-FE"
                     }
                     target="_blank"
-                    aria-lable="Github Repo for FE Spotify Clone"
+                    aria-label="Github Repo for FE Spotify Clone"
                   >
                     <FaGithub />
                   </SocialIconLink>
                   <SocialIconLink
                     href={" https://m8-d5-oauth-spotify-fe.vercel.app/"}
                     target="_blank"
-                    aria-lable="Spotify Clone"
+                    aria-label="Spotify Clone"
                   >
                     <MdOpenInBrowser />
                   </SocialIconLink>

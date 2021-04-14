@@ -18,7 +18,6 @@ import greenMe from "../../assets/images/greenMe.png";
 import orangeMe from "../../assets/images/orangeMe.png";
 
 import {Avatar} from "../../styles/globalStyles"
-import { HashLink as Link } from 'react-router-hash-link';
 
 function Footer({theme, setTheme}) {
 
@@ -76,21 +75,21 @@ function Footer({theme, setTheme}) {
             <SocialIconLink
               href={"https://github.com/youCanCallMeStevie"}
               target="_blank"
-              aria-lable="Github"
+              aria-label="Github"
             >
               <FaGithub />
             </SocialIconLink>
             <SocialIconLink
               href={"https://www.instagram.com/steviecodes"}
               target="_blank"
-              aria-lable="Instagram"
+              aria-label="Instagram"
             >
               <FaInstagram />
             </SocialIconLink>
             <SocialIconLink
               href={"https://www.linkedin.com/in/youcancallmestevie/"}
               target="_blank"
-              aria-lable="Linked"
+              aria-label="Linked"
             >
               <FaLinkedin />
             </SocialIconLink>

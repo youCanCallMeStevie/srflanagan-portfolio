@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import 'csshake';
-import { Avatar, ScriptHeading, Button } from "../../styles/globalStyles";
+import {  ScriptHeading, Button } from "../../styles/globalStyles";
 import {
   Nav,
   NavBarContainer,
@@ -8,8 +8,6 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavItemBtn,
-  NavBtnLink,
   HamburgerIcon,
 } from "./BarNav.elements";
 import {Toggle} from "../index"

@@ -4,7 +4,7 @@ import { themes } from "./styles/themes";
 import GlobalStyles from './styles/globalStyles';
 
 import {CV, BarNav, Footer, Hero} from "./Components"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 
 function App() {

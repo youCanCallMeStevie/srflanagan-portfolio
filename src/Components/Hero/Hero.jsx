@@ -19,14 +19,6 @@ import Typewriter from "typewriter-effect";
 import { SocialIcons, SocialIconLink } from "../Footer/Footer.elements";
 
 function Hero({ theme, setTheme }) {
-  function changeTheme() {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }
- 
 
   return (
     <>
@@ -42,7 +34,7 @@ function Hero({ theme, setTheme }) {
             <Column>
           <Title>Stephanie</Title>
           <Title> Flanagan</Title>
-          <Heading>//Full-Stack Developer</Heading>
+          <Heading>&#47;&#47;Full-Stack Developer</Heading>
           <Quote>
             I make thing <br></br>
             <Typewriter
@@ -61,21 +53,21 @@ function Hero({ theme, setTheme }) {
                 <SocialIconLink
                   href={"https://github.com/youCanCallMeStevie"}
                   target="_blank"
-                  aria-lable="Github"
+                  aria-label="Github"
                 >
                   <FaGithub />
                 </SocialIconLink>
                 <SocialIconLink
                   href={"https://www.instagram.com/steviecodes"}
                   target="_blank"
-                  aria-lable="Instagram"
+                  aria-label="Instagram"
                 >
                   <FaInstagram />
                 </SocialIconLink>
                 <SocialIconLink
                   href={"https://www.linkedin.com/in/youcancallmestevie/"}
                   target="_blank"
-                  aria-lable="Linked"
+                  aria-label="Linked"
                 >
                   <FaLinkedin />
                 </SocialIconLink>
