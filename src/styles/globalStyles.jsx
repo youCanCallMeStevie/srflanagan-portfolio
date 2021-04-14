@@ -109,7 +109,7 @@ export const SubTitle = styled.h3`
   font-size: 1.2em;
   margin-bottom: 16px;
   font-weight: 700px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   letter-spacing: 2px;
 `;
 export const Quote = styled.div`
@@ -144,6 +144,10 @@ export const Column = styled.div`
   flex-direction: column;
   margin: 50px;
   max-width: 45vw;
+  min-width: 400px;
+  /* justify-content:space-around; */
+  /* align-content:start; */
+
   img {
   min-width: 300px;
     height: 300px;
