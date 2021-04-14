@@ -23,14 +23,14 @@ function CV({ theme, setTheme }) {
       <Page>
         <Row>
           <Column>
-            <CVContainer>
+            {/* <CVContainer> */}
               <Heading id="education">&#60;Education&#47;&#62;</Heading>
               <Divider />
               <SubTitle>Full Stack Graduate Certification</SubTitle>
               <p>
                 MERN stack focused, with TypeScript, Socket.IO, PostgreSQL, and
-                Git. Use of frameworks such as Material UI, Bootstrap and more.
-                Agile methodologies, such as Scrum. 1000+ hours of personal
+                Git.</p> <p>Use of frameworks such as Material UI, Bootstrap and more.
+                Agile methodologies,</p> <p>such as Scrum.1000+ hours of personal
                 coding.
               </p>
               <br></br>
@@ -48,10 +48,10 @@ function CV({ theme, setTheme }) {
 
 
               {/* <LgCircle xAxis={"0"} next={"experience"}/> */}
-            </CVContainer>
+            {/* </CVContainer> */}
           </Column>
           <Column>
-            <CVContainer>
+            {/* <CVContainer> */}
               <Heading id="projects">&#60;Projects&#47;&#62;</Heading>{" "}
               <Divider />
               <Row>
@@ -139,7 +139,7 @@ function CV({ theme, setTheme }) {
               <p>• Translated to React.</p>
               <p>• Redux, SASS, hooks added.</p>
               <br></br>
-            </CVContainer>
+            {/* </CVContainer> */}
           </Column>
         </Row>
       </Page>

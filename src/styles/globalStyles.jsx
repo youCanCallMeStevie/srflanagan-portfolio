@@ -76,10 +76,17 @@ export const Container = styled.div`
   justify-content: center;
   min-width: 400px;
 
-  @media screen and (max-width: 991px) {
+  p {
+    color: ${props => props.theme.titleColor};
+    letter-spacing: 1px;
+    margin: 10px;
+
+  }
+
+  /* @media screen and (max-width: 991px) {
     padding-left: 10px;
     padding-right: 10px;
-  } ;
+  } ; */
 `;
 
 export const ScriptHeading = styled.h1`
@@ -93,6 +100,9 @@ export const Title = styled.h1`
   transition: all 0.5s ease;
   font-size: 5.5em;
   margin-bottom: 16px;
+  @media screen and (max-width: 960px) {
+    font-size: 4.5em;;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -133,7 +143,7 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   transition: all 0.5s ease;
-  justify-content: center;
+  /* justify-content: center; */
 
   @media screen and (max-width: 960px) {
     flex-direction: column;
@@ -142,6 +152,7 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 20px;
   /* margin: 50px; */
   max-width: 45vw;
   min-width: 400px;
@@ -166,10 +177,10 @@ export const CVContainer = styled.div`
     color: ${props => props.theme.titleColor};
     letter-spacing: 1px;
   }
-  @media screen and (max-width: 991px) {
+  /* @media screen and (max-width: 991px) {
     padding-left: 10px;
     padding-right: 10px;
-  } ;
+  } ; */
 `;
 
 export const smCircle = styled.svg`
