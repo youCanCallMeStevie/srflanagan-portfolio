@@ -68,8 +68,8 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1300px;
   margin-top: 2em;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
@@ -142,7 +142,7 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  /* margin: 50px; */
   max-width: 45vw;
   min-width: 400px;
   /* justify-content:space-around; */
