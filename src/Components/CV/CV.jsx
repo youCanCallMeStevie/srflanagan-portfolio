@@ -29,8 +29,8 @@ function CV({ theme, setTheme }) {
               <SubTitle>Full Stack Graduate Certification</SubTitle>
               <p>
                 MERN stack focused, with TypeScript, Socket.IO, PostgreSQL, and
-                Git.</p> <p>Use of frameworks such as Material UI, Bootstrap and more.
-                Agile methodologies,</p> <p>such as Scrum.1000+ hours of personal
+                Git. Use of frameworks such as Material UI, Bootstrap and more.
+                Agile methodologies, such as Scrum.1000+ hours of personal
                 coding.
               </p>
               <br></br>
