@@ -74,7 +74,7 @@ export const Container = styled.div`
   padding-right: 50px;
   display: flex;
   justify-content: center;
-  min-width: 400px;
+  min-width: 320px;
 
   p {
     color: ${props => props.theme.titleColor};
@@ -155,7 +155,7 @@ export const Column = styled.div`
   padding: 20px;
   /* margin: 50px; */
   max-width: 45vw;
-  min-width: 400px;
+  min-width: 320px;
   /* justify-content:space-around; */
   /* align-content:start; */
 
@@ -171,7 +171,7 @@ export const CVContainer = styled.div`
   z-index: 1;
   width: 50%;
   margin-top: 2em;
-  min-width: 400px;
+  min-width: 320px;
   /* padding-left: 150px; */
   p {
     color: ${props => props.theme.titleColor};
