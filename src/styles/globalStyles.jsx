@@ -1,32 +1,61 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding:0;
-    font-family: "Roboto", sans-serif;
     background-color: ${props => props.theme.pageBackground};
 transition: all .5s ease;
+body{
+  font-family: 'Lato', sans-serif;
+}
 }
 `;
+
+export const Button = styled.button`
+  border-radius: 8px;
+  background: ${props => props.theme.accents};
+  white-space: nowrap;
+  padding: 12px 24px;
+  margin: 0px 8px;
+  color: ${props => props.theme.pageBackground};
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5001;
+  letter-spacing: 1.5px;
+  &:hover {
+    background: ${props => props.theme.secondaryCircle};
+    color: ${props => props.theme.accents};
+    transition: all 0.5s ease;
+  }
+  @media screen and (max-width: 960px) {
+    width: 80%;
+  }
+`;
 export const Page = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-width: 100%;
-background-color: ${props => props.theme.pageBackground};
-transition: all .5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 360px;
+  background-color: ${props => props.theme.pageBackground};
+  transition: all 0.5s ease;
+`;
 
-
-// `
 export const Avatar = styled.div`
   margin: 1rem;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+
   img {
     border-radius: 50px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     overflow: hidden;
     height: 100%;
     width: 100%fit-content;
@@ -38,43 +67,109 @@ export const Container = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1300px;
+  margin-top: 2em;
   margin-right: auto;
   margin-left: auto;
   padding-left: 50px;
   padding-right: 50px;
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+
   @media screen and (max-width: 991px) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   } ;
 `;
 
-export const Title = styled.h1`
-color: ${props => props.theme.titleColor};
-transition: all .5s ease;
+export const ScriptHeading = styled.h1`
+  color: ${props => props.theme.titleColor};
+  font-family: "Bad Script", cursive;
+  transition: all 0.5s ease;
 `;
 
-export const SubTitle = styled.h2`
-color: ${props => props.theme.subTitleColor};
-font-size: 18px;
-transition: all .5s ease;
-`
+export const Title = styled.h1`
+  color: ${props => props.theme.titleColor};
+  transition: all 0.5s ease;
+  font-size: 5.5em;
+  margin-bottom: 16px;
+`;
 
-// export const Toggle = styled.button`
-//   cursor: pointer;
-//   height: 50px;
-//   width: 50px;
-//   border-radius: 50%;
-//   border: none;
-//   background-color: ${props => props.theme.titleColor};
-//   color: ${props => props.theme.pageBackground};
-//   &:focus {
-//     outline: none;
-//   }
-//   transition: all 0.5s ease;
-// `;
+export const Heading = styled.h2`
+  color: ${props => props.theme.titleColor};
+  font-size: 2em;
+  margin-bottom: 16px;
+  margin-top: 16px;
+
+  letter-spacing: 5px;
+`;
+
+export const SubTitle = styled.h3`
+  color: ${props => props.theme.titleColor};
+  font-size: 1.2em;
+  margin-bottom: 16px;
+  font-weight: 700px;
+  margin-right: 50px;
+  letter-spacing: 2px;
+`;
+export const Quote = styled.div`
+  color: ${props => props.theme.subTitleColor};
+  font-size: 24px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  font-weight: 700px;
+  margin-bottom: 16px;
+`;
+
+export const Divider = styled.div`
+  border-bottom: 5px solid ${props => props.theme.titleColor};
+  width: 20em;
+  margin: 1em 0 1em 0;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s ease;
+  justify-content: center;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  max-width: 45vw;
+  img {
+  min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 50px;
+  }
+`;
+
+export const CVContainer = styled.div`
+  z-index: 1;
+  width: 50%;
+  margin-top: 2em;
+  min-width: 400px;
+  /* padding-left: 150px; */
+  p {
+    color: ${props => props.theme.titleColor};
+    letter-spacing: 1px;
+  }
+  @media screen and (max-width: 991px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  } ;
+`;
 
 export const smCircle = styled.svg`
+  transition: all 0.5s ease;
+`;
 
-transition: all .5s ease;
-`
 export default GlobalStyles;

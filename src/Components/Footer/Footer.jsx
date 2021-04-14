@@ -14,6 +14,9 @@ import {
   SocialWrapper,
   SocialContainer,
 } from "./Footer.elements";
+import greenMe from "../../assets/images/greenMe.png";
+import orangeMe from "../../assets/images/orangeMe.png";
+
 import {Avatar} from "../../styles/globalStyles"
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -61,15 +64,14 @@ function Footer({theme, setTheme}) {
             >
               <>
               <Avatar >
-            <img
-              src={theme==="light"? "https://res.cloudinary.com/youcancallmestevie/image/upload/v1615643843/BDusers/npa0yfrhmxcyhxopbdfi.png" : "https://res.cloudinary.com/youcancallmestevie/image/upload/v1618271401/BDusers/Copy_of_Orange_Blue_Book_Donation_Poster_19_lh04op.png"}
-              alt="Stephanie's avatar"
+              <img
+              src={theme==="light"? greenMe : orangeMe}
+              alt="Stevie's avatar"
             />
           </Avatar>
               </>
             </SiteLogo>
-            {/* <MoonText>The moon's {moonPhase}</MoonText>
-          </MoonWrapper> */}
+
           <SocialIcons>
             <SocialIconLink
               href={"https://github.com/youCanCallMeStevie"}

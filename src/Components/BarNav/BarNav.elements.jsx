@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { Container } from "../../styles/globalStyles";
 
 
 export const Nav = styled.nav`
-    background: ${props => props.theme.secondaryCircle};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,6 +13,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10001;
   transition: all .5s ease;
+  
 
 `;
 
@@ -25,12 +25,11 @@ export const NavBarContainer = styled(Container)`
   ${Container}
 `;
 
-export const NavLogo = styled(Link)`
-  color: #f3f4ed;
+export const NavLogo = styled(HashLink)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
 `;
@@ -67,14 +66,14 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 100vh;
+    width: 100%;
+    height: 90vh;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: ${({ click }) => (click ? 0 : "-110%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: ${props => props.theme.secondaryCircle};
+    background: ${props => props.theme.pageBackground};
   }
 `;
 
@@ -104,8 +103,8 @@ export const NavLinks = styled.div`
   letter-spacing: 1.1px;
   }
   @media screen and (max-width: 960px) {
+    margin-top: 10px;
     text-align: center;
-    padding: 2rem 12rem 0rem 0rem;
     width: 100%;
     display: table;
     &:hover {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
-
-import { Avatar, Title } from "../../styles/globalStyles";
+import 'csshake';
+import { Avatar, ScriptHeading, Button } from "../../styles/globalStyles";
 import {
   Nav,
   NavBarContainer,
@@ -13,6 +13,7 @@ import {
   HamburgerIcon,
 } from "./BarNav.elements";
 import {Toggle} from "../index"
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 const BarNav = ({theme, setTheme}) => {
@@ -43,34 +44,35 @@ const BarNav = ({theme, setTheme}) => {
           <NavBarContainer>
             <NavLogo to="/" >
               <>
-              <Avatar >
-            <img
-              src={theme==="light"? "https://res.cloudinary.com/youcancallmestevie/image/upload/v1615643843/BDusers/npa0yfrhmxcyhxopbdfi.png" : "https://res.cloudinary.com/youcancallmestevie/image/upload/v1618271401/BDusers/Copy_of_Orange_Blue_Book_Donation_Poster_19_lh04op.png"}
-              alt="Stephanie's avatar"
-            />
-          </Avatar>
+              <ScriptHeading>Stevie Codes</ScriptHeading>
+              <div class="shake shake-chunk shake-constant">👋 
+            </div>
               </>
-              <Title></Title>
+              
             </NavLogo>
             <HamburgerIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </HamburgerIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks
-                  
-                >
-                  Link
+                <NavLinks to="/#about" >
+                  About
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                
-                >
-                  Hello
-                </NavLinks>
+              <NavLinks to="/#skills">
+                    CV
+                  </NavLinks>
               </NavItem>
-             
+              <NavItem>
+              <NavLinks to="/#portfolio">
+                    Portfolio
+                  </NavLinks>
+              </NavItem>
+
+                   {/* <Button>Coffee?</Button>  */}
+                   <a href="mailto:stevieCodes@gmail.com?subject=We should meet for a coffee"><Button>Coffee?</Button></a>  
+
               <Toggle theme={theme} setTheme={setTheme}/>
             </NavMenu>
           </NavBarContainer>

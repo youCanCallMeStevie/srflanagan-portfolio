@@ -4,3 +4,5 @@ export { default as Toggle} from "./Toggle/Toggle";
 export { default as LgCircle} from "./LgCircle/LgCircle";
 export { default as SmCircle} from "./SmCircle/SmCircle";
 export { default as Footer} from "./Footer/Footer";
+export { default as Hero} from "./Hero/Hero";
+

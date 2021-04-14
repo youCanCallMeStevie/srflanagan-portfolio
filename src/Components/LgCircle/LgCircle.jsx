@@ -7,13 +7,13 @@ function LgCircle({xAxis, next}) {
   <>
   <PageWrapper>
     <Link  to={`/#${next}`}>
-    <motion.div whileHover={{ scale: 1.8 }} >
+    {/* <motion.div whileHover={{ scale: 1.3 }} > */}
       <IconWrapper>
         <svg width="200" height="500">
           <circle cx={xAxis} cy="220" r="50%"></circle>
         </svg>
       </IconWrapper>
-    </motion.div>
+    {/* </motion.div> */}
     </Link>
     </PageWrapper>
 

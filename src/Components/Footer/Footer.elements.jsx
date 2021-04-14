@@ -19,6 +19,8 @@ export const FooterLinksContainer = styled.div`
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
+  display: none;
+
   @media screen and (min-width: 820px) {
     padding-top: 32px;
   }
@@ -71,7 +73,7 @@ export const FooterLink = styled(Link)`
 
 export const SocialContainer = styled.section`
    background:${props => props.theme.pageBackground};
-   transition: all .5s ease;
+   transition: all .3s ease;
 
   width: 100%;
   
@@ -100,25 +102,7 @@ export const SiteLogo = styled(Link)`
 
 `;
 
-export const MoonWrapper = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @media screen and (max-width: 820px) {
-    margin-bottom: 20px;
-  }
-`;
 
-export const MoonText = styled.div`
-  color: ${props => props.theme.fontColor};
-  transition: all .5s ease;
-
-  font-size: 12px;
-  margin-bottom: 12px;
-  @media screen and (max-width: 820px) {
-    font-size: 16px;
-  }
-`;
 
 export const Copright = styled.small`
   color: ${props => props.theme.fontColor};
@@ -130,7 +114,7 @@ export const Copright = styled.small`
 
 export const SocialIcons = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 240px;
 `;
@@ -138,9 +122,9 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: ${props => props.theme.fontColor};
 
-  font-size: 24px;
+  font-size: 2em;
   &:hover {
     color: ${props => props.theme.accents};
-    transition: 0.3s ease-out;
+    transition: 0.1s ease-out;
   }
 `;
