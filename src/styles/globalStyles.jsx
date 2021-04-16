@@ -41,7 +41,7 @@ export const Page = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-width: 300px;
+  /* min-width: 300px; */
   background-color: ${props => props.theme.pageBackground};
   transition: all 0.5s ease;
 `;
