@@ -171,7 +171,9 @@ export const Column = styled.div`
   min-width: 300px;
   /* justify-content:space-around; */
   /* align-content:start; */
-
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
   img {
     min-width: 300px;
     height: 300px;

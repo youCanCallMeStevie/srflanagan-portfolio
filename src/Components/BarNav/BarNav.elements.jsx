@@ -32,6 +32,7 @@ export const NavLogo = styled(HashLink)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  margin-left: 40px;
 `;
 
 
