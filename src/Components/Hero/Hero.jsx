@@ -39,7 +39,7 @@ function Hero({ theme, setTheme }) {
           <Quote>
             <Typewriter
               options={{
-                strings: ["I am bold & bright.", "I am Full-Stack Developer", "I see the bigger picture", "I make things work.", "I will make you laugh."],
+                strings: ["I am bold & bright.", "I am a Full-Stack Developer.", "I see the bigger picture.", "I make things work.", "I will make you laugh."],
                 autoStart: true,
                 loop: true,
               }}
