@@ -74,7 +74,7 @@ export const Container = styled.div`
   padding-right: 50px; */
   display: flex;
   justify-content: center;
-  min-width: 300px;
+  /* min-width: 300px; */
 
   p {
     color: ${props => props.theme.titleColor};
@@ -146,10 +146,10 @@ export const Divider = styled.div`
 
 
   }
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) {
     width: 20px;
 
-  }
+  } */
 `;
 
 export const Row = styled.div`
@@ -172,7 +172,8 @@ export const Column = styled.div`
   /* justify-content:space-around; */
   /* align-content:start; */
   @media screen and (max-width: 960px) {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%
   }
   img {
     min-width: 300px;

@@ -36,7 +36,7 @@ function Hero({ theme, setTheme }) {
           <Title> Flanagan</Title>
           <Heading>&#47;&#47;Full-Stack Developer</Heading>
           <Quote>
-            I make thing <br></br>
+            I make thing
             <Typewriter
               options={{
                 strings: ["s work.", "s better.", "s more fun."],
