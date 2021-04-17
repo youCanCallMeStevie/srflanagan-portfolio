@@ -76,7 +76,7 @@ function CV({ theme, setTheme }) {
               <p>• Written in React, Javascript using MongoDB, Redux.</p>
               <p>• FE build using TypeScript and Styled-Components.</p>
               <p>• Algorithm to determine biodynamic days.</p>
-              <p>• BE including tokens, cookies, authorization</p>
+              <p>• BE including tokens, cookies, authentication.</p>
               <br></br>
               <Row>
                 <SubTitle>Instagram Clone</SubTitle>{" "}
@@ -101,7 +101,7 @@ function CV({ theme, setTheme }) {
               <p>
                 {" "}
                 • Written in React, Javascript, using MongoDB, Socket.IO, Redux,
-                and SASS, with no assisted CSS libraries
+                and SASS, with no assisted CSS libraries.
               </p>
               <p>Personal contributions:</p>
               <p>• Architect of the backend.</p>

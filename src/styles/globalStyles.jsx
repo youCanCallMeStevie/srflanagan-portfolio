@@ -35,7 +35,7 @@ export const Button = styled.button`
     width: 80%;
   }
 `;
-export const Page = styled.div`
+export const Page = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
