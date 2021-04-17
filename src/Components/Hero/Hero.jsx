@@ -13,7 +13,8 @@ import {
   Quote,
   Column,
   Row,
-  Avatar
+  Avatar,
+  ScriptHeading
 } from "../../styles/globalStyles";
 import Typewriter from "typewriter-effect";
 import { SocialIcons, SocialIconLink } from "../Footer/Footer.elements";
@@ -32,14 +33,13 @@ function Hero({ theme, setTheme }) {
             /></Avatar> 
             </Column>
             <Column>
-          <Title>Stephanie</Title>
-          <Title> Flanagan</Title>
-          <Heading>&#47;&#47;Full-Stack Developer</Heading>
+          <Title>Stephanie Flanagan</Title>
+          <ScriptHeading>&#47;&#47;you can call me Stevie</ScriptHeading>
+          {/* <Heading>&#47;&#47;Full-Stack Developer</Heading> */}
           <Quote>
-            I make thing
             <Typewriter
               options={{
-                strings: ["s work.", "s better.", "s more fun."],
+                strings: ["I am bold & bright.", "I am Full-Stack Developer", "I see the bigger picture", "I make things work.", "I will make you laugh."],
                 autoStart: true,
                 loop: true,
               }}

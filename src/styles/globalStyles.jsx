@@ -41,18 +41,19 @@ export const Page = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* min-width: 300px; */
   background-color: ${props => props.theme.pageBackground};
-  transition: all 0.5s ease;
+  padding: 50px;
 `;
 
 export const Avatar = styled.div`
   margin: 1rem;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
   display: flex;
   justify-content: center;
 
   img {
+      transition: all 0.5s ease;
+
     border-radius: 50px;
     height: 50px;
     width: 50px;
@@ -68,40 +69,25 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1300px;
   margin-top: 2em;
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* padding-left: 50px;
-  padding-right: 50px; */
   display: flex;
   justify-content: center;
-  /* min-width: 300px; */
-
   p {
     color: ${props => props.theme.titleColor};
     letter-spacing: 1px;
-    /* margin: 10px; */
   }
-
-  /* @media screen and (max-width: 991px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  } ; */
 `;
 
 export const ScriptHeading = styled.h1`
   color: ${props => props.theme.titleColor};
   font-family: "Bad Script", cursive;
-  transition: all 0.5s ease;
 `;
 
 export const Title = styled.h1`
   color: ${props => props.theme.titleColor};
-  transition: all 0.5s ease;
   font-size: 5.5em;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   @media screen and (max-width: 960px) {
     font-size: 4.5em;
-    margin-bottom: 12px;
 
   }
   @media screen and (max-width: 500px) {
@@ -112,9 +98,7 @@ export const Title = styled.h1`
 export const Heading = styled.h2`
   color: ${props => props.theme.titleColor};
   font-size: 2em;
-  margin-bottom: 16px;
-  margin-top: 16px;
-
+  margin-top: 12px;
   letter-spacing: 5px;
 `;
 
@@ -123,13 +107,11 @@ export const SubTitle = styled.h3`
   font-size: 1.2em;
   margin-bottom: 16px;
   font-weight: 700px;
-  /* margin-right: 50px; */
   letter-spacing: 2px;
 `;
 export const Quote = styled.div`
   color: ${props => props.theme.subTitleColor};
   font-size: 24px;
-  transition: all 0.5s ease;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -143,21 +125,12 @@ export const Divider = styled.div`
   margin: 1em 0 1em 0;
   @media screen and (max-width: 960px) {
     width: 15em;
-
-
-  }
-  /* @media screen and (max-width: 500px) {
-    width: 20px;
-
-  } */
+}
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  transition: all 0.5s ease;
-  /* justify-content: center; */
-
   @media screen and (max-width: 960px) {
     flex-direction: column;
   }
@@ -166,15 +139,15 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /* margin: 50px; */
   max-width: 45vw;
   min-width: 300px;
-  /* justify-content:space-around; */
-  /* align-content:start; */
   @media screen and (max-width: 960px) {
-    /* width: 100%; */
     max-width: 100%
-  }
+  };
+  p {
+    color: ${props => props.theme.titleColor};
+    letter-spacing: 1px;
+  };
   img {
     min-width: 300px;
     height: 300px;
@@ -187,21 +160,6 @@ export const Column = styled.div`
   }
 `;
 
-export const CVContainer = styled.div`
-  z-index: 1;
-  width: 50%;
-  margin-top: 2em;
-  min-width: 300px;
-  /* padding-left: 150px; */
-  p {
-    color: ${props => props.theme.titleColor};
-    letter-spacing: 1px;
-  }
-  /* @media screen and (max-width: 991px) {
-    padding-left: 10px;
-    padding-right: 10px;
-  } ; */
-`;
 
 export const smCircle = styled.svg`
   transition: all 0.5s ease;

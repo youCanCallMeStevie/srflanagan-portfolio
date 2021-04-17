@@ -52,23 +52,22 @@ const BarNav = ({theme, setTheme}) => {
               {click ? <FaTimes /> : <FaBars />}
             </HamburgerIcon>
             <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks to="/#about" >
                   About
                 </NavLinks>
-              </NavItem>
-              <NavItem>
+              </NavItem> */}
+              {/* <NavItem>
               <NavLinks to="/#skills">
                     CV
                   </NavLinks>
               </NavItem>
-              <NavItem>
-              <NavLinks to="/#portfolio">
+              <NavItem> */}
+              {/* <NavLinks to="/#portfolio">
                     Portfolio
                   </NavLinks>
-              </NavItem>
+              </NavItem> */}
 
-                   {/* <Button>Coffee?</Button>  */}
                    <a href="mailto:stevieCodes@gmail.com?subject=We should meet for a coffee"><Button>Coffee?</Button></a>  
 
               <Toggle theme={theme} setTheme={setTheme}/>

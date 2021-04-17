@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { MdOpenInBrowser } from "react-icons/md";
-
 import {
   Page,
   Divider,
@@ -9,7 +8,6 @@ import {
   Heading,
   Column,
   Row,
-  CVContainer,
 } from "../../styles/globalStyles";
 import { SocialIcons, SocialIconLink } from "../Footer/Footer.elements";
 // import { SmCircle, LgCircle } from "../index";
@@ -23,7 +21,6 @@ function CV({ theme, setTheme }) {
       <Page>
         <Row>
           <Column>
-            {/* <CVContainer> */}
               <Heading id="education">&#60;Education&#47;&#62;</Heading>
               <Divider />
               <SubTitle>Full Stack Graduate Certification</SubTitle>
@@ -48,10 +45,8 @@ function CV({ theme, setTheme }) {
 
 
               {/* <LgCircle xAxis={"0"} next={"experience"}/> */}
-            {/* </CVContainer> */}
           </Column>
           <Column>
-            {/* <CVContainer> */}
               <Heading id="projects">&#60;Projects&#47;&#62;</Heading>{" "}
               <Divider />
               <Row>
@@ -139,16 +134,7 @@ function CV({ theme, setTheme }) {
               <p>• Translated to React.</p>
               <p>• Redux, SASS, hooks added.</p>
               <br></br>
-            {/* </CVContainer> */}
-          </Column>
-        </Row>
-      </Page>
-    </>
-  );
-}
-
-{
-  /* <Heading id="experience">&#60;Experience&#47;&#62;</Heading>
+              <Heading id="experience">&#60;Experience&#47;&#62;</Heading>
               <Divider />
               <SubTitle>Marketing &#38; Communications Manager</SubTitle>
               <p>
@@ -172,6 +158,12 @@ function CV({ theme, setTheme }) {
               </p>
               <p>
               • Co-founded a visually lead street food concept called BOB's Lobster (listed as Top Food Trucks by Lonely Planet)
-              </p> */
+              </p>
+          </Column>
+        </Row>
+      </Page>
+    </>
+  );
+
 }
 export default CV;
