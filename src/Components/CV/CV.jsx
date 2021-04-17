@@ -14,7 +14,6 @@ import { SocialIcons, SocialIconLink } from "../Footer/Footer.elements";
 
 function CV({ theme, setTheme }) {
 
-
   return (
     <>
 

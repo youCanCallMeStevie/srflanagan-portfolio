@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@400;700&display=swap');
 * {
@@ -80,6 +79,9 @@ export const Container = styled.div`
 export const ScriptHeading = styled.h1`
   color: ${props => props.theme.titleColor};
   font-family: "Bad Script", cursive;
+    @media screen and (max-width: 500px)  {
+    font-size: 29px;
+    }
 `;
 
 export const Title = styled.h1`
@@ -88,10 +90,12 @@ export const Title = styled.h1`
   margin-bottom: 12px;
   @media screen and (max-width: 960px) {
     font-size: 4.5em;
-
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     font-size: 3em;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 2em;
   }
 `;
 
